@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { AwsCdkTypescriptSampleStack } from '../lib/aws-cdk-typescript-sample-stack';
+import { PipelineStack } from '../lib/pipeline-stack';
 
 const app = new cdk.App();
-new AwsCdkTypescriptSampleStack(app, 'AwsCdkTypescriptSampleStack');
+new PipelineStack(app, 'CdkPipelineStack');
